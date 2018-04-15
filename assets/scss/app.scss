@@ -77,8 +77,8 @@ html {
     &::after {
       position: absolute;
       display: inline-block;
-      width: 40px;
-      height: 40px;
+      width: $button-size;
+      height: $button-size;
       transform: rotate(-30deg);
       border-radius: 50%;
       background-color: $button-color;
@@ -114,7 +114,8 @@ html {
     }
   }
 
-  .snes-famicom & {
+  // Super Famicom theme
+  .super-famicom & {
 
     &.button-x {
       &::after {
@@ -137,6 +138,22 @@ html {
     &.button-b {
       &::after {
         background-color: $button-b;
+      }
+    }
+  }
+
+  .snes-purple & {
+    &.button-x,
+    &.button-y {
+      &::after {
+        background-color: #a5a0ce;
+      }
+    }
+
+    &.button-a,
+    &.button-b {
+      &::after {
+        background-color: #50507c;
       }
     }
   }
