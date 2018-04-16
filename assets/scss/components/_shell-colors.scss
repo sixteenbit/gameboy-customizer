@@ -1,0 +1,43 @@
+.shell {
+  &.shell- {
+    &black {
+      background-color: #1a1a1b;
+    }
+
+    &white {
+      background-color: #fafafa;
+    }
+
+    &dark-grey {
+      background-color: #7a7f83;
+    }
+
+    &yellow {
+      background-color: #dea537;
+    }
+
+    &red {
+      background-color: #c91322;
+    }
+
+    &clear {
+      background-color: rgba(#fff, .75);
+    }
+
+    &clear-green {
+      background-color: rgba(#2cc232, .75);
+    }
+
+    &clear-orange {
+      background-color: rgba(#e7752f, .75);
+    }
+
+    &clear-blue {
+      background-color: rgba(#2172b5, .75);
+    }
+
+    &clear-red {
+      background-color: rgba(#d02627, .75);
+    }
+  }
+}

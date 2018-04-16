@@ -1,0 +1,63 @@
+.buttons {
+  &.button- {
+    &black {
+      &::after {
+        background-color: #111;
+      }
+    }
+
+    &white {
+      &::after {
+        background-color: #fafafa;
+      }
+    }
+
+    &light-grey {
+      &::after {
+        background-color: #ccc;
+      }
+    }
+
+    &dark-grey {
+      &::after {
+        background-color: #555;
+      }
+    }
+
+    &purple {
+      &::after {
+        background-color: #50507c;
+      }
+    }
+
+    &green {
+      &::after {
+        background-color: #417f69;
+      }
+    }
+
+    &blue {
+      &::after {
+        background-color: #3c5286;
+      }
+    }
+
+    &yellow {
+      &::after {
+        background-color: #fbcb75;
+      }
+    }
+
+    &red {
+      &::after {
+        background-color: #a65354;
+      }
+    }
+
+    &turquoise {
+      &::after {
+        background-color: #48d8f5;
+      }
+    }
+  }
+}

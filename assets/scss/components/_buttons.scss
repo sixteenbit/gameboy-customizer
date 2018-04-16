@@ -1,0 +1,85 @@
+.buttons {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  &.directional {
+    &::before {
+      position: absolute;
+      top: 320px;
+      left: 60px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 3px;
+      background-color: $directional-color;
+      box-shadow: -30px 30px 0 $directional-color, 0 60px 0 $directional-color, 30px 30px 0 $directional-color, 0 25px 0 $directional-color, 10px 30px 0 $directional-color, -10px 30px 0 $directional-color, 0 30px 0 $directional-color, 0 35px 0 $directional-color;
+      content: '';
+    }
+  }
+
+  &.button {
+
+    &:active {
+      &::after {
+        box-shadow: inset 0 0 100px hsla(0, 0%, 0%, .3);
+      }
+    }
+
+    &::after {
+      position: absolute;
+      display: inline-block;
+      width: $button-size;
+      height: $button-size;
+      transform: rotate(-30deg);
+      border-radius: 50%;
+      background-color: $button-color;
+      content: '';
+    }
+  }
+
+  &.button-x {
+    &::after {
+      top: 280px;
+      right: 50px;
+    }
+  }
+
+  &.button-y {
+    &::after {
+      top: 302px;
+      right: 100px;
+    }
+  }
+
+  &.button-a {
+    &::after {
+      top: 280px + 50;
+      right: 35px;
+    }
+  }
+
+  &.button-b {
+    &::after {
+      top: 302px + 50;
+      right: 85px;
+    }
+  }
+
+  &.start-select {
+    &::after {
+      position: absolute;
+      right: 190px;
+      top: 430px;
+      z-index: 5;
+      display: inline-block;
+      width: 9px;
+      height: 35px;
+      transform: rotate(60deg);
+      border-radius: 100px;
+      background-color: $button-start-select;
+      box-shadow: 23px -35px 0 $button-start-select;
+      content: '';
+    }
+  }
+}

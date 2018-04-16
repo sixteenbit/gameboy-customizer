@@ -1,0 +1,46 @@
+.button {
+  // Super Famicom theme
+  .super-famicom & {
+
+    &.button-x {
+      &::after {
+        background-color: $button-x;
+      }
+    }
+
+    &.button-y {
+      &::after {
+        background-color: $button-y;
+      }
+    }
+
+    &.button-a {
+      &::after {
+        background-color: $button-a;
+      }
+    }
+
+    &.button-b {
+      &::after {
+        background-color: $button-b;
+      }
+    }
+  }
+
+  // SNES Purple
+  .snes-purple & {
+    &.button-x,
+    &.button-y {
+      &::after {
+        background-color: #a5a0ce;
+      }
+    }
+
+    &.button-a,
+    &.button-b {
+      &::after {
+        background-color: #50507c;
+      }
+    }
+  }
+}

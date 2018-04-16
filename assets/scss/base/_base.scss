@@ -1,0 +1,23 @@
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: #fafafa;
+  background-image: url('../img/light.png');
+  background-repeat: repeat;
+  background-size: 512px;
+
+  &.dark {
+    background-image: url('../img/dark.png');
+  }
+
+  @media(-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background-image: url('../img/light@2x.png');
+
+    &.dark {
+      background-image: url('../img/dark@2x.png');
+    }
+  }
+}
