@@ -1,22 +1,73 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" data-id="background">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gameboy Customizer</title>
-    <link rel="stylesheet" href="assets/css/app.css" />
+	<meta charset="utf-8"/>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Gameboy Customizer</title>
+	<link rel="stylesheet" href="assets/css/app.css"/>
+	<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+
+	<style>
+	</style>
 </head>
 <body>
+<form id="configuration">
+	<div>
+		<label>Background
+			<select data-where="background">
+				<option selected value="light">Light</option>
+				<option value="dark">Dark</option>
+			</select>
+		</label>
+	</div>
+	<div>
+		<label>Shell
+			<select data-where="shell">
+				<option selected value="shell-dark-grey">Light Grey</option>
+				<option value="shell-black">Black</option>
+				<option value="shell-yellow">Yellow</option>
+			</select>
+		</label>
+	</div>
+	<div>
+		<label>X Button
+			<select data-where="button-x">
+				<option selected value="buttons button button-x button-burgundy">Burgundy</option>
+			</select>
+		</label>
+	</div>
+</form>
 
-<div class="shell">
+<div class="shell" data-id="shell">
 	<i class="buttons directional"></i>
-	<i class="buttons button button-x"></i>
+	<i class="buttons button button-x" data-id="button-x"></i>
 	<i class="buttons button button-y"></i>
 	<i class="buttons button button-a"></i>
 	<i class="buttons button button-b"></i>
 	<i class="buttons button start-select"></i>
 </div>
+
+<script>
+	$(document).ready(() => {
+		const $options = $('#configuration select');
+		$options.each(function () {
+			update(this);
+		});
+		$options.change(function () {
+			update(this);
+		});
+
+		function update($this) {
+			const option = $($this).val();
+			const where = $($this).attr('data-where');
+			$(`[data-id=${where}]`)[0].className = where + ' ' + option;
+		}
+	});
+</script>
 
 </body>
 </html>
