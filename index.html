@@ -6,10 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Gameboy Customizer</title>
 	<link rel="stylesheet" href="assets/css/app.css"/>
-	<script
-			src="https://code.jquery.com/jquery-3.3.1.min.js"
-			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 	<style>
 	</style>
@@ -27,16 +24,85 @@
 	<div>
 		<label>Shell
 			<select data-where="shell">
-				<option selected value="shell-dark-grey">Light Grey</option>
+				<option selected value="shell-light-grey">Light Grey</option>
 				<option value="shell-black">Black</option>
+				<option value="shell-white">White</option>
+				<option value="shell-dark-grey">Dark Grey</option>
 				<option value="shell-yellow">Yellow</option>
+				<option value="shell-red">Red</option>
+				<option value="shell-clear">Clear</option>
+				<option value="shell-clear-green">Clear Green</option>
+				<option value="shell-clear-orange">Clear Orange</option>
+				<option value="shell-clear-blue">Clear Blue</option>
+				<option value="shell-clear-red">Clear Red</option>
 			</select>
 		</label>
 	</div>
 	<div>
 		<label>X Button
 			<select data-where="button-x">
-				<option selected value="buttons button button-x button-burgundy">Burgundy</option>
+				<option selected value="buttons button button-x">Burgundy</option>
+				<option value="buttons button button-x button-black">Black</option>
+				<option value="buttons button button-x button-white">White</option>
+				<option value="buttons button button-x button-light-grey">Light Grey</option>
+				<option value="buttons button button-x button-dark-grey">Dark Grey</option>
+				<option value="buttons button button-x button-purple">Purple</option>
+				<option value="buttons button button-x button-green">Green</option>
+				<option value="buttons button button-x button-blue">Blue</option>
+				<option value="buttons button button-x button-yellow">Yellow</option>
+				<option value="buttons button button-x button-red">Red</option>
+				<option value="buttons button button-x button-turquoise">Turquoise</option>
+			</select>
+		</label>
+	</div>
+	<div>
+		<label>Y Button
+			<select data-where="button-y">
+				<option selected value="buttons button button-y">Burgundy</option>
+				<option value="buttons button button-y button-black">Black</option>
+				<option value="buttons button button-y button-white">White</option>
+				<option value="buttons button button-y button-light-grey">Light Grey</option>
+				<option value="buttons button button-y button-dark-grey">Dark Grey</option>
+				<option value="buttons button button-y button-purple">Purple</option>
+				<option value="buttons button button-y button-green">Green</option>
+				<option value="buttons button button-y button-blue">Blue</option>
+				<option value="buttons button button-y button-yellow">Yellow</option>
+				<option value="buttons button button-y button-red">Red</option>
+				<option value="buttons button button-y button-turquoise">Turquoise</option>
+			</select>
+		</label>
+	</div>
+	<div>
+		<label>A Button
+			<select data-where="button-a">
+				<option selected value="buttons button button-a">Burgundy</option>
+				<option value="buttons button button-a button-black">Black</option>
+				<option value="buttons button button-a button-white">White</option>
+				<option value="buttons button button-a button-light-grey">Light Grey</option>
+				<option value="buttons button button-a button-dark-grey">Dark Grey</option>
+				<option value="buttons button button-a button-purple">Purple</option>
+				<option value="buttons button button-a button-green">Green</option>
+				<option value="buttons button button-a button-blue">Blue</option>
+				<option value="buttons button button-a button-yellow">Yellow</option>
+				<option value="buttons button button-a button-red">Red</option>
+				<option value="buttons button button-a button-turquoise">Turquoise</option>
+			</select>
+		</label>
+	</div>
+	<div>
+		<label>B Button
+			<select data-where="button-b">
+				<option selected value="buttons button button-b">Burgundy</option>
+				<option value="buttons button button-b button-black">Black</option>
+				<option value="buttons button button-b button-white">White</option>
+				<option value="buttons button button-b button-light-grey">Light Grey</option>
+				<option value="buttons button button-b button-dark-grey">Dark Grey</option>
+				<option value="buttons button button-b button-purple">Purple</option>
+				<option value="buttons button button-b button-green">Green</option>
+				<option value="buttons button button-b button-blue">Blue</option>
+				<option value="buttons button button-b button-yellow">Yellow</option>
+				<option value="buttons button button-b button-red">Red</option>
+				<option value="buttons button button-b button-turquoise">Turquoise</option>
 			</select>
 		</label>
 	</div>
@@ -45,9 +111,9 @@
 <div class="shell" data-id="shell">
 	<i class="buttons directional"></i>
 	<i class="buttons button button-x" data-id="button-x"></i>
-	<i class="buttons button button-y"></i>
-	<i class="buttons button button-a"></i>
-	<i class="buttons button button-b"></i>
+	<i class="buttons button button-y" data-id="button-y"></i>
+	<i class="buttons button button-a" data-id="button-a"></i>
+	<i class="buttons button button-b" data-id="button-b"></i>
 	<i class="buttons button start-select"></i>
 </div>
 
