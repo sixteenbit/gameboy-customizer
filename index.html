@@ -13,103 +13,107 @@
 	</style>
 </head>
 <body>
-<form id="configuration">
-	<div class="form-group">
-		<label for="background-color">Background</label>
-		<select id="background-color" class="form-control" data-where="background">
-			<option selected value="light">Light</option>
-			<option value="dark">Dark</option>
-		</select>
-	</div>
-	<div class="form-group">
-		<label for="shell-color">Shell</label>
-		<select id="shell-color" class="form-control" data-where="shell">
-			<option selected value="shell-light-grey">Light Grey</option>
-			<option value="shell-black">Black</option>
-			<option value="shell-white">White</option>
-			<option value="shell-dark-grey">Dark Grey</option>
-			<option value="shell-yellow">Yellow</option>
-			<option value="shell-red">Red</option>
-			<option value="shell-clear">Clear</option>
-			<option value="shell-clear-green">Clear Green</option>
-			<option value="shell-clear-orange">Clear Orange</option>
-			<option value="shell-clear-blue">Clear Blue</option>
-			<option value="shell-clear-red">Clear Red</option>
-		</select>
-	</div>
-	<div class="form-group">
-		<label for="button-theme">Button Theme</label>
-		<select id="button-theme" class="form-control" data-where="button-theme">
-			<option selected value="custom">Custom</option>
-			<option value="super-famicom">Super Famicom</option>
-			<option value="snes-purple">SNES Purple</option>
-		</select>
-	</div>
-	<div class="form-group">
-		<label for="x-button-color">X Button</label>
-		<select id="x-button-color" class="form-control" data-where="button-x">
-			<option selected value="buttons button button-x">Burgundy</option>
-			<option value="buttons button button-x button-black">Black</option>
-			<option value="buttons button button-x button-white">White</option>
-			<option value="buttons button button-x button-light-grey">Light Grey</option>
-			<option value="buttons button button-x button-dark-grey">Dark Grey</option>
-			<option value="buttons button button-x button-purple">Purple</option>
-			<option value="buttons button button-x button-green">Green</option>
-			<option value="buttons button button-x button-blue">Blue</option>
-			<option value="buttons button button-x button-yellow">Yellow</option>
-			<option value="buttons button button-x button-red">Red</option>
-			<option value="buttons button button-x button-turquoise">Turquoise</option>
-		</select>
-	</div>
-	<div class="form-group">
-		<label for="y-button-color">Y Button</label>
-		<select id="y-button-color" class="form-control" data-where="button-y">
-			<option selected value="buttons button button-y">Burgundy</option>
-			<option value="buttons button button-y button-black">Black</option>
-			<option value="buttons button button-y button-white">White</option>
-			<option value="buttons button button-y button-light-grey">Light Grey</option>
-			<option value="buttons button button-y button-dark-grey">Dark Grey</option>
-			<option value="buttons button button-y button-purple">Purple</option>
-			<option value="buttons button button-y button-green">Green</option>
-			<option value="buttons button button-y button-blue">Blue</option>
-			<option value="buttons button button-y button-yellow">Yellow</option>
-			<option value="buttons button button-y button-red">Red</option>
-			<option value="buttons button button-y button-turquoise">Turquoise</option>
-		</select>
-	</div>
-	<div class="form-group">
-		<label for="a-button-color">A Button</label>
-		<select id="a-button-color" class="form-control" data-where="button-a">
-			<option selected value="buttons button button-a">Burgundy</option>
-			<option value="buttons button button-a button-black">Black</option>
-			<option value="buttons button button-a button-white">White</option>
-			<option value="buttons button button-a button-light-grey">Light Grey</option>
-			<option value="buttons button button-a button-dark-grey">Dark Grey</option>
-			<option value="buttons button button-a button-purple">Purple</option>
-			<option value="buttons button button-a button-green">Green</option>
-			<option value="buttons button button-a button-blue">Blue</option>
-			<option value="buttons button button-a button-yellow">Yellow</option>
-			<option value="buttons button button-a button-red">Red</option>
-			<option value="buttons button button-a button-turquoise">Turquoise</option>
-		</select>
-	</div>
-	<div class="form-group">
-		<label for="b-button-color">B Button</label>
-		<select id="b-button-color" class="form-control" data-where="button-b">
-			<option selected value="buttons button button-b">Burgundy</option>
-			<option value="buttons button button-b button-black">Black</option>
-			<option value="buttons button button-b button-white">White</option>
-			<option value="buttons button button-b button-light-grey">Light Grey</option>
-			<option value="buttons button button-b button-dark-grey">Dark Grey</option>
-			<option value="buttons button button-b button-purple">Purple</option>
-			<option value="buttons button button-b button-green">Green</option>
-			<option value="buttons button button-b button-blue">Blue</option>
-			<option value="buttons button button-b button-yellow">Yellow</option>
-			<option value="buttons button button-b button-red">Red</option>
-			<option value="buttons button button-b button-turquoise">Turquoise</option>
-		</select>
-	</div>
-</form>
+
+<nav class="customizer navbar fixed-top navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">Gameboy Customizer</a>
+	<form id="configuration" class="form-inline">
+		<div class="form-group">
+			<label class="sr-only sr-only-focusable" for="background-color">Background</label>
+			<select id="background-color" class="form-control" data-where="background">
+				<option selected value="default">Background Image</option>
+				<option value="dark">Dark</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label class="sr-only sr-only-focusable" for="shell-color">Shell</label>
+			<select id="shell-color" class="form-control" data-where="shell">
+				<option selected value="default">Shell Color</option>
+				<option value="shell-black">Black</option>
+				<option value="shell-white">White</option>
+				<option value="shell-dark-grey">Dark Grey</option>
+				<option value="shell-yellow">Yellow</option>
+				<option value="shell-red">Red</option>
+				<option value="shell-clear">Clear</option>
+				<option value="shell-clear-green">Clear Green</option>
+				<option value="shell-clear-orange">Clear Orange</option>
+				<option value="shell-clear-blue">Clear Blue</option>
+				<option value="shell-clear-red">Clear Red</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label class="sr-only sr-only-focusable" for="button-theme">Button Theme</label>
+			<select id="button-theme" class="form-control" data-where="button-theme">
+				<option selected value="custom">Button Theme</option>
+				<option value="super-famicom">Super Famicom</option>
+				<option value="snes-purple">SNES Purple</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label class="sr-only sr-only-focusable" for="a-button-color">A Button</label>
+			<select id="a-button-color" class="form-control" data-where="button-a">
+				<option selected value="buttons button button-a">A</option>
+				<option value="buttons button button-a button-black">Black</option>
+				<option value="buttons button button-a button-white">White</option>
+				<option value="buttons button button-a button-light-grey">Light Grey</option>
+				<option value="buttons button button-a button-dark-grey">Dark Grey</option>
+				<option value="buttons button button-a button-purple">Purple</option>
+				<option value="buttons button button-a button-green">Green</option>
+				<option value="buttons button button-a button-blue">Blue</option>
+				<option value="buttons button button-a button-yellow">Yellow</option>
+				<option value="buttons button button-a button-red">Red</option>
+				<option value="buttons button button-a button-turquoise">Turquoise</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label class="sr-only sr-only-focusable" for="b-button-color">B Button</label>
+			<select id="b-button-color" class="form-control" data-where="button-b">
+				<option selected value="buttons button button-b">B</option>
+				<option value="buttons button button-b button-black">Black</option>
+				<option value="buttons button button-b button-white">White</option>
+				<option value="buttons button button-b button-light-grey">Light Grey</option>
+				<option value="buttons button button-b button-dark-grey">Dark Grey</option>
+				<option value="buttons button button-b button-purple">Purple</option>
+				<option value="buttons button button-b button-green">Green</option>
+				<option value="buttons button button-b button-blue">Blue</option>
+				<option value="buttons button button-b button-yellow">Yellow</option>
+				<option value="buttons button button-b button-red">Red</option>
+				<option value="buttons button button-b button-turquoise">Turquoise</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label class="sr-only sr-only-focusable" for="x-button-color">X Button</label>
+			<select id="x-button-color" class="form-control" data-where="button-x">
+				<option selected value="buttons button button-x">X</option>
+				<option value="buttons button button-x button-black">Black</option>
+				<option value="buttons button button-x button-white">White</option>
+				<option value="buttons button button-x button-light-grey">Light Grey</option>
+				<option value="buttons button button-x button-dark-grey">Dark Grey</option>
+				<option value="buttons button button-x button-purple">Purple</option>
+				<option value="buttons button button-x button-green">Green</option>
+				<option value="buttons button button-x button-blue">Blue</option>
+				<option value="buttons button button-x button-yellow">Yellow</option>
+				<option value="buttons button button-x button-red">Red</option>
+				<option value="buttons button button-x button-turquoise">Turquoise</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label class="sr-only sr-only-focusable" for="y-button-color">Y Button</label>
+			<select id="y-button-color" class="form-control" data-where="button-y">
+				<option selected value="buttons button button-y">Y</option>
+				<option value="buttons button button-y button-black">Black</option>
+				<option value="buttons button button-y button-white">White</option>
+				<option value="buttons button button-y button-light-grey">Light Grey</option>
+				<option value="buttons button button-y button-dark-grey">Dark Grey</option>
+				<option value="buttons button button-y button-purple">Purple</option>
+				<option value="buttons button button-y button-green">Green</option>
+				<option value="buttons button button-y button-blue">Blue</option>
+				<option value="buttons button button-y button-yellow">Yellow</option>
+				<option value="buttons button button-y button-red">Red</option>
+				<option value="buttons button button-y button-turquoise">Turquoise</option>
+			</select>
+		</div>
+	</form>
+</nav>
 
 <div class="shell" data-id="shell">
 	<div data-id="button-theme">
