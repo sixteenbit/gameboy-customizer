@@ -33,6 +33,7 @@
 				<option value="shell-dark-grey">Dark Grey</option>
 				<option value="shell-yellow">Yellow</option>
 				<option value="shell-red">Red</option>
+				<option value="shell-teal">Teal</option>
 				<option value="shell-clear">Clear</option>
 				<option value="shell-clear-green">Clear Green</option>
 				<option value="shell-clear-orange">Clear Orange</option>
@@ -46,6 +47,21 @@
 				<option selected value="custom">Button Theme</option>
 				<option value="super-famicom">Super Famicom</option>
 				<option value="snes-purple">SNES Purple</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label class="sr-only sr-only-focusable" for="directional-color">Directional</label>
+			<select id="directional-color" class="form-control" data-where="directional">
+				<option selected value="buttons directional">Directional</option>
+				<option value="buttons directional directional-white">White</option>
+				<option value="buttons directional directional-light-grey">Light Grey</option>
+				<option value="buttons directional directional-dark-grey">Dark Grey</option>
+				<option value="buttons directional directional-purple">Purple</option>
+				<option value="buttons directional directional-green">Green</option>
+				<option value="buttons directional directional-blue">Blue</option>
+				<option value="buttons directional directional-yellow">Yellow</option>
+				<option value="buttons directional directional-red">Red</option>
+				<option value="buttons directional directional-turquoise">Turquoise</option>
 			</select>
 		</div>
 		<div class="form-group">
@@ -112,17 +128,34 @@
 				<option value="buttons button button-y button-turquoise">Turquoise</option>
 			</select>
 		</div>
+		<div class="form-group">
+			<label class="sr-only sr-only-focusable" for="start-select-color">Start/Select</label>
+			<select id="start-select-color" class="form-control" data-where="start-select">
+				<option selected value="buttons button start-select">Start/Select</option>
+				<option value="buttons button start-select start-select-white">White</option>
+				<option value="buttons button start-select start-select-black">Black</option>
+				<option value="buttons button start-select start-select-white">White</option>
+				<option value="buttons button start-select start-select-light-grey">Light Grey</option>
+				<option value="buttons button start-select start-select-dark-grey">Dark Grey</option>
+				<option value="buttons button start-select start-select-purple">Purple</option>
+				<option value="buttons button start-select start-select-green">Green</option>
+				<option value="buttons button start-select start-select-blue">Blue</option>
+				<option value="buttons button start-select start-select-yellow">Yellow</option>
+				<option value="buttons button start-select start-select-red">Red</option>
+				<option value="buttons button start-select start-select-turquoise">Turquoise</option>
+			</select>
+		</div>
 	</form>
 </nav>
 
 <div class="shell" data-id="shell">
 	<div data-id="button-theme">
-		<i class="buttons directional"></i>
+		<i class="buttons directional" data-id="directional"></i>
 		<i class="buttons button button-x" data-id="button-x"></i>
 		<i class="buttons button button-y" data-id="button-y"></i>
 		<i class="buttons button button-a" data-id="button-a"></i>
 		<i class="buttons button button-b" data-id="button-b"></i>
-		<i class="buttons button start-select"></i>
+		<i class="buttons button start-select" data-id="start-select"></i>
 	</div>
 </div>
 

@@ -60,4 +60,116 @@
       }
     }
   }
+
+  &.directional- {
+    &white {
+      &::before {
+        @include directional(#fafafa);
+      }
+    }
+
+    &light-grey {
+      &::before {
+        @include directional(#ccc);
+      }
+    }
+
+    &dark-grey {
+      &::before {
+        @include directional(#555);
+      }
+    }
+
+    &purple {
+      &::before {
+        @include directional(#50507c);
+      }
+    }
+
+    &green {
+      &::before {
+        @include directional(#417f69);
+      }
+    }
+
+    &blue {
+      &::before {
+        @include directional(#3c5286);
+      }
+    }
+
+    &yellow {
+      &::before {
+        @include directional(#fbcb75);
+      }
+    }
+
+    &red {
+      &::before {
+        @include directional(#a65354);
+      }
+    }
+
+    &turquoise {
+      &::before {
+        @include directional(#48d8f5);
+      }
+    }
+  }
+
+  &.start-select- {
+    &white {
+      &::after {
+        @include start_select(#fafafa);
+      }
+    }
+
+    &light-grey {
+      &::after {
+        @include start_select(#ccc);
+      }
+    }
+
+    &dark-grey {
+      &::after {
+        @include start_select(#555);
+      }
+    }
+
+    &purple {
+      &::after {
+        @include start_select(#50507c);
+      }
+    }
+
+    &green {
+      &::after {
+        @include start_select(#417f69);
+      }
+    }
+
+    &blue {
+      &::after {
+        @include start_select(#3c5286);
+      }
+    }
+
+    &yellow {
+      &::after {
+        @include start_select(#fbcb75);
+      }
+    }
+
+    &red {
+      &::after {
+        @include start_select(#a65354);
+      }
+    }
+
+    &turquoise {
+      &::after {
+        @include start_select(#48d8f5);
+      }
+    }
+  }
 }
